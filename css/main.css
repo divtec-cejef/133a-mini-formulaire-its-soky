@@ -54,7 +54,7 @@ form > ul > li{
 }
 
 form > ul > li:last-of-type{
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 
 label {
@@ -125,5 +125,6 @@ label > input:checked + span {
  }
 
 fieldset label {
-    margin: 1em 0;
+    padding: 1em 0;
+    margin: 0;
 }

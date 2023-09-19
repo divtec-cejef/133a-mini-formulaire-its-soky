@@ -22,6 +22,7 @@
 <form action="https://kode.ch/getpost/" method="post">
     <ul>
         <li>
+            <label for="bg"></label>
             <select name="bg" id="bg">
                 <!--option[value="$.jpg"]{Arrière-plan $}*10-->
                 <option value="1.jpg">Arrière-plan 1</option>
@@ -64,6 +65,12 @@
         <li>
             <label for="Cmdp">Confimer mot de passe</label>
             <input id="Cmdp" name="confirm" type="password">
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="connect">
+                <span>Rester connecté</span>
+            </label>
         </li>
         <li>
             <button>Créer un compte</button>
