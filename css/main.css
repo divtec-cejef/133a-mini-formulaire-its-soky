@@ -49,8 +49,12 @@ form > ul {
     margin: 0;
 }
 
-form > ul > li {
+form > ul > li{
     margin-bottom: 1.5em;
+}
+
+form > ul > li:last-of-type{
+    margin-bottom: 0em;
 }
 
 label {
@@ -78,4 +82,48 @@ h1 {
 input {
     border: 2px solid #2c3e50;
     padding: .5em;
+    width: 100%;
+
+    /*force héritage des police*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+select {
+    border: 2px solid #2c3e50;
+    padding: .5em;
+    width: 100%;
+    /*force héritage des police*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: white;
+}
+
+fieldset {
+    border: 2px solid #2c3e50;
+    padding: 0 1em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 .50em;
+}
+
+label input {
+    width: auto;
+
+}
+
+label > input + span {
+    font-weight: normal;
+}
+
+label > input:checked + span {
+     font-weight: bold;
+ }
+
+fieldset label {
+    margin: 1em 0;
 }
